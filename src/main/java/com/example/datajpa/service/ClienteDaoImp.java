@@ -19,6 +19,6 @@ public class ClienteDaoImp implements IClienteDao {
     @Transactional(readOnly=true)
     @Override
     public List<Cliente> findAll() {
-        return null;
+        return em.createQuery("from Cliente").getResultList();
     }
 }
