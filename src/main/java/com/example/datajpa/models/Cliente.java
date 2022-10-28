@@ -9,9 +9,9 @@ import java.util.Date;
 @Entity
 @Table(name = "cliente")
 public class Cliente implements Serializable {
+
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
     private Long id;
 
     private String nombre;
